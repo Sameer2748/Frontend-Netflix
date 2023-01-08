@@ -26,7 +26,7 @@ export default function Register() {
     setPassword(passwordRef.current.value);
     setUsername(usernameRef.current.value);
     try {
-      await axios.post("https://prismatic-duckanoo-b260cd.netlify.app/api/auth/register", { email,username, password });
+      await axios.post("https://netflix.adaptable.app/api/auth/register", { email,username, password });
       navigate('/login')
 
     } catch (err) {}

@@ -13,7 +13,7 @@ const Home = ({ type }) => {
     const getRandomLists = async () => {
       try {
         const res = await axios.get(
-          `lists${type ? "?type=" + type : ""}${
+          `https://prismatic-duckanoo-b260cd.netlify.app/api/lists${type ? "?type=" + type : ""}${
             genre ? "&genre=" + genre : ""
           }`,
           {
